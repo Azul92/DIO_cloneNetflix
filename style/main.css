@@ -1,0 +1,332 @@
+/* ==== PRINCIPAL ====*/
+
+:root {
+    --vermelho: #e50914;
+    --preta: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.container {
+    margin-left: 20px;
+}
+
+.subtitulo {
+    margin: 30px;
+    margin-left: 60px;
+    font-size: 2em;
+}
+
+#botao-up {
+    font-size: 2.5em;
+    text-decoration: none;
+    position: fixed;
+    z-index: 10;
+    right: 50px;
+    bottom: 50px;
+}
+
+/* ==== HEADER E NAVEGAÇÃO ==== */
+
+.logo img {
+    width: 34px;
+    height: 34px;
+    margin-left: 30px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* ==== FILME PRINCIPAL ====*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url(../img/capa-house.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .titulo {
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+
+.botao {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover {
+    background-color: white;
+    color: black;
+}
+
+.botao i {
+    margin-right: 8px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+/* ==== PRIMEIRO CARROSSEL DE FILMES ==== */
+
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.box-filme:hover {
+    transform: scale(1.03);
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
+}
+
+/* ==== CARDS ==== */
+
+.card {
+    width: 320px;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+    transition: .4s ease all;
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.card h3 {
+    margin: 15px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-shadow: 1px 1px 2px #141414;
+}
+
+.card_desc {
+    padding: 10px;
+}
+
+.card_desc,
+.card h3 {
+    opacity: 0;
+    transition: .4s ease all;
+}
+
+.card:hover .card_desc,
+.card:hover h3 {
+    transition: .4s ease all;
+    opacity: 1;
+    color: white;
+    text-shadow: 1px 1px 2px #141414;
+}
+
+/* ==== IMAGENS -> SÉRIES ==== */
+
+.card-serie-01 {
+    background-image: url('../img/serie01.jpg');
+}
+
+.card-serie-02 {
+    background-image: url('../img/serie02.jpg');
+}
+
+.card-serie-03 {
+    background-image: url('../img/serie03.jpg');
+}
+
+.card-serie-04 {
+    background-image: url('../img/serie04.jpg');
+}
+
+.card-serie-05 {
+    background-image: url('../img/serie05.jpg');
+}
+
+.card-serie-06 {
+    background-image: url('../img/serie06.jpg');
+}
+
+.card-serie-07 {
+    background-image: url('../img/serie07.jpg');
+}
+
+.card-serie-08 {
+    background-image: url('../img/serie08.jpg');
+}
+
+.card-serie-09 {
+    background-image: url('../img/serie09.jpg');
+}
+
+.card-serie-10 {
+    background-image: url('../img/serie10.jpg');
+}
+
+/* ==== IMAGENS -> FILMES ==== */
+
+.card-filme-01 {
+    background-image: url('../img/filme01.jpg');
+}
+.card-filme-02 {
+    background-image: url('../img/filme02.jpg');
+}
+.card-filme-03 {
+    background-image: url('../img/filme03.jpg');
+}
+.card-filme-04 {
+    background-image: url('../img/filme04.jpg');
+}
+.card-filme-05 {
+    background-image: url('../img/filme05.jpg');
+}
+.card-filme-06 {
+    background-image: url('../img/filme06.jpg');
+}
+.card-filme-07 {
+    background-image: url('../img/filme07.jpg');
+}
+.card-filme-08 {
+    background-image: url('../img/filme08.jpg');
+}
+.card-filme-09 {
+    background-image: url('../img/filme09.jpg');
+}
+.card-filme-10 {
+    background-image: url('../img/filme10.jpg');
+}
+
+/* ==== IMAGENS -> DOCUMENTÁRIOS ==== */
+
+.card-doc-01 {
+    background-image: url('../img/doc01.jpg');
+}
+.card-doc-02 {
+    background-image: url('../img/doc02.jpg');
+}
+.card-doc-03 {
+    background-image: url('../img/doc03.jpg');
+}
+.card-doc-04 {
+    background-image: url('../img/doc04.jpg');
+}
+.card-doc-05 {
+    background-image: url('../img/doc05.jpg');
+}
+.card-doc-06 {
+    background-image: url('../img/doc06.jpg');
+}
+.card-doc-07 {
+    background-image: url('../img/doc07.jpg');
+}
+.card-doc-08 {
+    background-image: url('../img/doc08.jpg');
+}
+.card-doc-09 {
+    background-image: url('../img/doc09.jpg');
+}
+.card-doc-10 {
+    background-image: url('../img/doc10.jpg');
+}
+
+/* ==== FOOTER ==== */
+
+.footer {
+    background-color: #0f0d0d;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.footer a {
+    color: #424242;
+}
+
+.icones-redes {
+    display: flex;
+    width: 20%;
+    text-align: center;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.documentarios {
+    margin-bottom: 100px;
+}
+
+.azul {
+    color: #002199;
+}
+
+.icones-redes a {
+    font-size: 1.8em;
+    color:#424242;
+}
+
+.icones-redes a:hover {
+    color:#a5a5a5;
+}
+
